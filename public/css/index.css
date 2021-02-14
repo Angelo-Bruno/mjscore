@@ -1,0 +1,373 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+   
+}
+
+.grid-container {
+    margin-left:35%;
+    margin-top: 0%;
+    display:grid;
+    grid-template-columns: 90px 40px 70px 60px 20px;
+    grid-gap: 2px;
+    padding: 1px;
+  }
+  
+  .grid-container > div {
+   
+    text-align: center;
+    font-size: 20px;
+  }
+ 
+  #score1,#score2{
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 2px;
+  }
+  #hora{
+    font-size: 14px;
+    margin-left:43.2%;
+    margin-top: 0%;
+
+  }
+
+  #players{
+
+    float: left;
+    align-items: space-between;
+    left: 50%;
+
+  }
+
+  #players1{
+
+    float: right;
+    align-items: space-between;
+    margin-top: -400px;
+    right: 150px;
+
+  }
+
+  /*main*/
+
+  body{
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    font-family: "Lato", sans-serif;
+    }
+    
+    *{margin: 0;
+    border: 0;
+    padding: 0;     
+    }
+    #menus ul
+    {
+      display: inline-block;
+      list-style:none;
+      position: fixed;
+      float:left;
+      margin:0;
+      padding:0;
+      margin-left: 0%;
+      width: 100%;
+      background-color:#111;
+      height: 3.3em; 
+      text-align: center;   
+    }
+    
+    #menus ul a
+    {   font-family: cursive;
+      font-size: 100%;
+      font-weight: 800;
+      text-decoration: none;
+      color: #F5F5F5;
+    }
+    
+    #menus ul li
+    {   position:relative;
+      float:left;
+      margin-left:5%;
+        margin-top: 0.2em;
+      padding:0      
+    }
+    #menus ul li:first-child{margin-left: 20%;}
+    
+    ul li a:hover {
+      background-color: black;
+      opacity: 50%;
+    }
+    
+    
+    .sidenav {
+      height: 100%;
+      width: 15%;
+      min-width: 15%;
+      position: fixed;
+      z-index: 1;
+      top: 6.5%;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 1.25em;
+      padding-left: 1%;
+    }
+    
+    .sidenav a {
+      padding-top: 4%;
+      font-family: cursive;
+      font-size: 100%;
+      font-weight: 800;
+      text-decoration: none;
+      color: #F5F5F5;
+      display: block;
+    }
+    
+    
+     .sidenav a:hover{
+      background-color: black;
+      opacity: 50%;
+    }
+    
+    
+    #content{
+      
+      margin-left: 15.5%;
+      width:auto;
+      height:50em;
+      
+      
+        
+    }
+
+  /*Tabs*/
+
+
+  /*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #a3f7bf;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #a3f7bf;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+ 
+  padding: 30px;
+}
+
+.tabset {
+  max-width: 65em;
+}
+  /*soccer field*/
+
+
+  .field{
+
+  height:30em;
+
+}
+
+div .field-body{
+margin-left:8%;
+}
+
+
+.login{
+  border: 2px solid black;
+  border-radius:30px;
+  width: 25%;
+  height: 500px;
+  text-align: center;
+  padding: 20px;
+  top:150px;
+ 
+  
+
+}
+.login input{
+  border: 1px solid;
+  border-radius:40px;
+  padding: 10px;
+  width: 70%;
+  
+}
+
+.login form{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+
+
+.register {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 60px 30px;
+  transition: .5s;
+  float:right;
+  width: 30%;
+  height:100%;
+  border: 1px solid black;
+
+}
+
+.register-form:hover {
+  background: rgba(255,255,255,.1);
+  box-shadow: 0 0 20px rgba(0,0,0.2);
+ 
+
+}
+
+.register h1 {
+  margin: 0 0 40px;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.register-form {
+  position: relative;
+  top: 30%;
+}
+.register-form input {
+  display: block;
+ 
+  width: 100%;
+  height:100%;
+  padding: 10px 20px;
+  box-sizing: border-box;;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.register-form input::placeholder {
+  color: #fff;
+}
+
+.register-form input[type="submit"]
+{
+  color: #fff;
+  background:#0072ff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form input[type="submit"]:hover
+{
+  background: #005aca;
+}
+
+.register-form a
+{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*SVG*/
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+ .icon-purchase-summary{
+  width:2em;
+  height: 2em;
+}
+
+.icon-england{
+
+  width:1em;
+  height:1em;
+
+}
